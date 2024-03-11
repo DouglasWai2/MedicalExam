@@ -1,0 +1,291 @@
+<!--CSS feito-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="./js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <title>MedicalExam</title>
+</head>
+
+<body class="home-body">
+  <header>
+    <nav>
+      <div id="navbar" class="">
+        <div id="header-logo">
+          <a href="#home"><img alt="logo" src="./assets/logo1.png" /></a>
+        </div>
+        <div>
+          <ul class="nav nav-underline display-none">
+            <li class="nav-item text-light">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#How-it-works" class="nav-link">Como funciona?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About-us" class="nav-link">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Contacts" class="nav-link">Contatos</a>
+            </li>
+            <script>
+              console.log(window.document.cookie)
+            </script>
+          </ul>
+        </div>
+        <div class="nav-button-wrapper">
+          <button class="login nav-button" onclick="irL()">Faça Login</button>
+          <button class="signup nav-button" onclick="cadLab()">Cadastre-se</button>
+          <input type="checkbox" id="nav-checkbox" style="display: none;" />
+          <label for="nav-checkbox" class="nav-toggle">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #1463cc"></i>
+          </label>
+          <div class="dark-mode-icon dark-icon display-none">
+            <i id="moon" class="fa-solid fa-moon" style="color: #000000"></i>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main class="home-main">
+    <section id="home" class="Home section">
+      <div id="Home-container">
+        <div id="left-container-home">
+          <p class="display-1 hidden-text">MedicalExam</p>
+          <p class="hidden-text">Site de gerenciamento laboratorial</p>
+          <p class="hidden-text">
+            Um site para gestão laboratorial é um assistente digital para seu laboratório!
+            <br>
+            O objetivo principal de usar esse recurso é melhorar a eficiência do processamento e gerenciamento de
+            exames, além de reduzir a necessidade de tarefas manuais, automatizando o fluxo de trabalho e diminuindo o
+            fluxo de pessoas nos laboratórios.
+            <br>
+            <br>
+            Trabalhando principalmente como administrador, ele oferece suporte às operações do laboratório, liberando
+            tempo e energia para que o verdadeiro profissional possa conduzir suas atividades à vontade, sem ter que
+            lidar com toda a papelada que acompanha o gerenciamento do laboratório.
+            Estamos entusiasmados em apresentar a você o nosso site MedicalExam, um portal repleto de recursos que foram
+            cuidadosamente criados para atender às suas necessidades e tornar sua vida mais conveniente.
+
+          </p>
+          <div class="wrapper hidden-btn">
+            <a class="cta" href="#">
+              <span onclick="cadLab()">Experimente</span>
+              <span>
+                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path class="one"
+                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path class="two"
+                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path class="three"
+                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div id="home-img">
+          <img class="hidden-img" alt="home-img hidden-img" src="./assets/brain-chemistry-animate.svg" />
+        </div>
+      </div>
+      <div class="waves">
+        <div class="custom-shape-divider-bottom-1694829493">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25" class="shape-fill"></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5" class="shape-fill"></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section id="How-it-works" class="section">
+      <p class="display-1 text-animation padding">Como funciona?</p>
+      <div class="how-container" id="header-1">
+        <lottie-player src="./assets/medical2.json" class="hidden-img" background="transparent" speed="1"
+          style="width: 100%; height: 100%; margin: 20px" loop autoplay></lottie-player>
+        <div class="how-text">
+          <h3 class="text-animation">Médico</h3>
+          <p class="text-animation">
+            No seu espaço você terá liberdade para visualizar seus pacientes e os exames correspondentes de forma fácil
+            e prática.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="lab-work" class="section">
+      <div class="custom-shape-divider-top-1694833668">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="how-container">
+        <div class="how-text">
+          <h3 class="text-animation">Laboratório</h3>
+          <p class="text-animation">
+            Seu papel é fundamental para o funcionamento da gestão, responsável pelos cadastros de pacientes e anexos de
+            exames.
+          </p>
+        </div>
+        <lottie-player src="./assets/laboratorio.json" class="hidden-img lab-animation" background="transparent"
+          speed="1" style="width: 80%; height: 100%; margin: 10% 2%; z-index: 20" loop autoplay></lottie-player>
+      </div>
+      <div class="waves-container">
+        <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" />
+            <use xlink:href="#gentle-wave" x="48" y="3" />
+            <use xlink:href="#gentle-wave" x="48" y="5" />
+            <use xlink:href="#gentle-wave" x="48" y="7" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <section id="pacient-work" class="section">
+      <div class="how-container">
+        <lottie-player src="./assets/paciente.json" class="pacient-animation hidden-img" background="transparent"
+          speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
+        <div class="how-text">
+          <h3 class="text-animation">Paciente</h3>
+          <p class="text-animation">
+            Sua vida será facilitada de forma que poderá visualizar seus exames de forma rápida sem sair de casa.
+          </p>
+        </div>
+      </div>
+      <object class="blue-waves" type="image/svg+xml" data="./assets/blue-waves.svg"></object>
+    </section>
+    <section id="About-us" class="section">
+      <p class="display-1 text-animation padding">Sobre nós</p>
+      <div class="about-us-wrapper">
+        <div class="about-us-card">
+
+          <img class="about-photo" src="./assets/anaf.jpeg" />
+          <div class="about-text-container">
+            <p>Ana Julia Firme</p>
+            <p>
+              Aprendi muito durante este processo e isso é uma realização em si; estou satisfeita com o impacto positivo
+              que este
+              projeto teve.
+            </p>
+          </div>
+        </div>
+        <div class="about-us-card">
+
+          <img class="about-photo" src="./assets/anaoliveira.jpeg" />
+          <div class="about-text-container">
+            <p>Ana Julia Oliveira</p>
+            <p>
+              Estou feliz com a forma como consegui traduzir minhas ideias e visão em um resultado tangível.
+            </p>
+          </div>
+        </div>
+        <div class="about-us-card">
+
+          <img class="about-photo" src="./assets/elo1.jpeg" />
+          <div class="about-text-container">
+            <p>Eloisa Rocha</p>
+            <p>
+              O resultado final superou as minhas expectativas de forma gratificante. Estou entusiasmada para aplicar
+              as valiosas lições que aprendi neste projeto em futuros desafios.
+            </p>
+          </div>
+        </div>
+        <div class="about-us-card">
+
+          <img class="about-photo" src="./assets/gra1.jpeg" />
+          <div class="about-text-container">
+            <p>Graziela Perussi</p>
+            <p>
+              Estou orgulhosa do meu desempenho neste projeto; dediquei tempo e esforço para torná-lo o melhor possível
+              ao lado das integrantes do grupo.
+            </p>
+          </div>
+        </div>
+        <div class="about-us-card">
+
+          <img class="about-photo" src="./assets/grazielly.jpeg" />
+          <div class="about-text-container">
+            <p>Grazielly Barleta</p>
+            <p>
+              Foi uma experiência inovadora e de muita dedicação de todas do grupo. Acredito que conseguimos atingir
+              nossos objetivos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="waves-container">
+        <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" />
+            <use xlink:href="#gentle-wave" x="48" y="3" />
+            <use xlink:href="#gentle-wave" x="48" y="5" />
+            <use xlink:href="#gentle-wave" x="48" y="7" />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <!--Colocar um rodapé ao invés de contatar-->
+    <footer>
+      <section id="Contacts" class="section" data-bs-theme="">
+        
+        <p>
+          <i class="fa-solid fa-envelope"></i>Email: <span>medicalexamtcc@gmail.com</span>
+        </p>
+        <p><i class="fa-solid fa-phone"></i>Celular: <span>(11)99999-9999</span></p>
+        <p><i class="fa-solid fa-location-dot"></i>Endereço: Etec Sylvio de Mattos Carvalho, N° 644 - Matão/SP</p>
+        <img src="./assets/logo1.png">
+        <a target="_blank" href="https://instagram.com/medicalexam2023?igshid=NzZlODBkYWE4Ng==">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+        <p>© 2023 Copyright - MedicalExam</p>
+      </section>
+    </footer>
+  </main>
+</body>
+
+</html>
